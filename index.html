@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+
+    <link rel="icon" type="image/svg+xml" href="./favicon.svg"> 
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elene Torchinava | Performance Marketing & Digital Advertising</title>
+    
+    <meta name="description" content="Elene Torchinava — performance marketing and digital advertising across paid search, paid social, programmatic and mobile acquisition.">
+    <meta name="theme-color" content="#F3EBF9">
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Google Fonts: Space Grotesk & Inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@600;700&display=swap" rel="stylesheet">
+    
+    <!-- Phosphor Icons -->
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        display: ['Space Grotesk', 'sans-serif'],
+                    },
+                    colors: {
+                        notebook: {
+                            bg: '#F3EBF9',
+                            grid: '#E2D4F0',
+                            card: '#FFFFFF',
+                            purple: '#8B5CF6',
+                            purpleLight: '#EDE9FE',
+                            mint: '#A7F3D0',
+                            yellow: '#FEF08A',
+                            pink: '#FBCFE8',
+                            text: '#1F2937',
+                            muted: '#6B7280',
+                            border: '#D8B4FE'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #F3EBF9;
+            background-image: 
+                linear-gradient(to right, #E2D4F0 1px, transparent 1px),
+                linear-gradient(to bottom, #E2D4F0 1px, transparent 1px);
+            background-size: 32px 32px;
+            color: #1F2937;
+            font-family: 'Inter', sans-serif;
+            overflow-x: hidden;
+        }
+
+        .polaroid {
+            background: #FFFFFF;
+            padding: 12px 12px 24px 12px;
+            box-shadow: 4px 4px 0px #8B5CF6;
+            border: 2px solid #1F2937;
+            transform: rotate(-1deg);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .polaroid:hover {
+            transform: rotate(0deg) scale(1.02);
+            box-shadow: 6px 6px 0px #8B5CF6;
+        }
+        .polaroid-alt {
+            background: #FFFFFF;
+            padding: 12px 12px 24px 12px;
+            box-shadow: 4px 4px 0px #10B981;
+            border: 2px solid #1F2937;
+            transform: rotate(1.5deg);
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+        .polaroid-alt:hover {
+            transform: rotate(0deg) scale(1.02);
+            box-shadow: 6px 6px 0px #10B981;
+        }
+
+        .chunky-badge {
+            border: 2px solid #1F2937;
+            box-shadow: 3px 3px 0px #1F2937;
+            transition: transform 0.1s ease, box-shadow 0.1s ease;
+        }
+        .chunky-badge:hover {
+            transform: translate(-1px, -1px);
+            box-shadow: 4px 4px 0px #1F2937;
+        }
+
+        .chunky-btn {
+            border: 2px solid #1F2937;
+            box-shadow: 4px 4px 0px #1F2937;
+            transition: all 0.15s ease;
+        }
+        .chunky-btn:hover {
+            transform: translate(-2px, -2px);
+            box-shadow: 6px 6px 0px #1F2937;
+        }
+        .chunky-btn:active {
+            transform: translate(1px, 1px);
+            box-shadow: 2px 2px 0px #1F2937;
+        }
+
+        ::selection {
+            background: #8B5CF6;
+            color: #FFFFFF;
+        }
+    </style>
+</head>
+<body class="bg-[#F3EBF9] text-[#1F2937]">
+
+    <!-- Navbar -->
+    <header class="sticky top-0 z-50 bg-[#F3EBF9]/90 backdrop-blur-md border-b-2 border-[#1F2937] px-6 lg:px-16 py-4 flex items-center justify-between">
+        <div class="flex items-center gap-3">
+            <span class="w-4 h-4 rounded-full bg-[#8B5CF6] border-2 border-[#1F2937]"></span>
+            <span class="font-display font-bold text-sm tracking-wide uppercase">ELENE TORCHINAVA</span>
+        </div>
+        <nav class="hidden md:flex items-center gap-6 font-display font-semibold text-sm">
+            <a href="#about" class="hover:text-[#8B5CF6] transition-colors">[ 01. ABOUT ]</a>
+            <a href="#experience" class="hover:text-[#8B5CF6] transition-colors">[ 02. EXPERIENCE ]</a>
+            <a href="#casestudies" class="hover:text-[#8B5CF6] transition-colors">[ 03. CASE STUDIES ]</a>
+            <a href="#skills" class="hover:text-[#8B5CF6] transition-colors">[ 04. SKILLS ]</a>
+        </nav>
+        <a href="#contact" class="px-5 py-2 bg-[#FEF08A] font-display font-bold text-xs uppercase chunky-btn rounded-lg">
+            Let's Talk
+        </a>
+    </header>
+
+    <!-- Main Container -->
+    <main class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 space-y-24">
+
+        <!-- HERO SECTION -->
+        <section class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center pt-8">
+            <div class="lg:col-span-7 space-y-6">
+                <div class="inline-flex items-center gap-2 px-3 py-1 bg-[#FEF08A] border-2 border-[#1F2937] rounded-full font-display text-xs font-bold shadow-[2px_2px_0px_#1F2937]">
+                    <i class="ph ph-sparkle text-sm"></i> Performance Marketing · Digital Advertising
+                </div>
+
+                <h1 class="font-display text-4xl sm:text-6xl lg:text-7xl font-extrabold uppercase tracking-tight leading-none">
+                    I make paid media <span class="bg-[#A7F3D0] px-2 border-2 border-[#1F2937] inline-block transform -rotate-1 shadow-[3px_3px_0px_#1F2937]">work harder.</span>
+                </h1>
+
+                <p class="text-base sm:text-lg text-[#4B5563] max-w-xl font-medium leading-relaxed">
+                    Hi, I'm <strong class="text-[#1F2937]">Elene,</strong> a digital advertising account manager with 5 years of experience across paid media, eCommerce and programmatic. I work across the campaign details and the bigger picture: what we're spending, what we're getting back, and what to try next.
+                </p>
+
+                <div class="flex flex-wrap items-center gap-4 pt-2">
+                    <a href="#casestudies" class="px-6 py-3 bg-[#8B5CF6] text-white font-display font-bold text-sm uppercase chunky-btn rounded-xl flex items-center gap-2">
+                        <span>See the Work</span>
+                        <i class="ph ph-arrow-right font-bold text-lg"></i>
+                    </a>
+                    <a href="#contact" class="px-6 py-3 bg-white font-display font-bold text-sm uppercase chunky-btn rounded-xl">
+                        Get in Touch
+                    </a>
+                </div>
+                <p class="text-xs font-mono text-[#6B7280]">Tbilisi, Georgia · Open to remote opportunities and relocation</p>
+            </div>
+
+            <!-- Polaroid Photo Frame & Doodles -->
+            <div class="lg:col-span-5 flex justify-center relative">
+                <div class="absolute -top-6 -left-6 text-2xl animate-bounce" aria-hidden="true">⭐</div>
+                <div class="absolute -bottom-4 -right-4 text-2xl" aria-hidden="true">✨</div>
+
+                <div class="polaroid w-72 sm:w-80">
+                    <div class="w-full h-72 bg-[#EDE9FE] border-2 border-[#1F2937] flex flex-col items-center justify-center relative overflow-hidden">
+                        <div class="w-32 h-32 rounded-full bg-[#8B5CF6] border-2 border-[#1F2937] flex items-center justify-center text-white text-5xl font-display font-bold shadow-[3px_3px_0px_#1F2937]" aria-label="Elene Torchinava initials">
+                            ET
+                        </div>
+                        <div class="absolute bottom-3 px-3 py-1 bg-white border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">
+                            Elene Torchinava 🎯
+                        </div>
+                    </div>
+                    <div class="pt-4 text-center font-display font-bold text-sm tracking-wider text-[#1F2937]">
+                        [ PAID MEDIA · PROGRAMMATIC · ECOMMERCE ]
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- ABOUT SECTION -->
+        <section id="about" class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 sm:p-12 shadow-[6px_6px_0px_#1F2937] relative">
+            <div class="absolute -top-4 right-8 px-4 py-1 bg-[#FBCFE8] border-2 border-[#1F2937] rounded-full font-display text-xs font-bold shadow-[2px_2px_0px_#1F2937]">
+                01 // A LITTLE ABOUT ME
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-5 space-y-4">
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold uppercase">I like the detail. I care about the bigger picture.</h2>
+                    <p class="text-sm sm:text-base text-[#4B5563] leading-relaxed">
+                        I've worked with international brands across paid search, paid social, programmatic and mobile acquisition. I enjoy getting into the details — budgets, audiences, creative tests and attribution — but always with the business goal in view. My earlier background in web development also means I'm comfortable getting into the technical side, from tracking to landing pages.
+                    </p>
+                    <p class="text-sm text-[#4B5563] leading-relaxed">
+                        I like a good dashboard, but I care more about what it tells us to do next.
+                    </p>
+                </div>
+
+                <div class="lg:col-span-7 grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <div class="p-5 bg-[#F3EBF9] border-2 border-[#1F2937] rounded-2xl shadow-[3px_3px_0px_#1F2937]">
+                        <div class="text-[#8B5CF6] text-2xl mb-2 font-bold">🎯</div>
+                        <h3 class="font-display font-bold text-base mb-1">Campaigns & Clients</h3>
+                        <p class="text-xs text-[#6B7280]">From campaign setup and testing to budget pacing, reporting and client recommendations. I've managed around 13 accounts at once across different markets and business models.</p>
+                    </div>
+                    <div class="p-5 bg-[#FEF08A]/40 border-2 border-[#1F2937] rounded-2xl shadow-[3px_3px_0px_#1F2937]">
+                        <div class="text-amber-600 text-2xl mb-2 font-bold">📊</div>
+                        <h3 class="font-display font-bold text-base mb-1">Measurement That Makes Sense</h3>
+                        <p class="text-xs text-[#6B7280]">GA4, GTM, Looker Studio and mobile attribution tools. I want to know where a number came from before making a decision based on it.</p>
+                    </div>
+                    <div class="p-5 bg-[#A7F3D0]/40 border-2 border-[#1F2937] rounded-2xl shadow-[3px_3px_0px_#1F2937] sm:col-span-2">
+                        <div class="text-emerald-700 text-2xl mb-2 font-bold">🛠️</div>
+                        <h3 class="font-display font-bold text-base mb-1">Always Finding a Better Way</h3>
+                        <p class="text-xs text-[#6B7280]">Alongside paid media, I've worked with Google Merchant Center on feed and product-listing optimisation, built Klaviyo email flows including cart-abandonment and Black Friday campaigns, and used HubSpot for audience management and tracking. I also work with mobile measurement partners such as Adjust, AppsFlyer, Singular and Kochava, and use Claude Artifacts and custom skills to bring fresh data into daily analysis and speed up optimisation work.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- EXPERIENCE SECTION -->
+        <section id="experience" class="space-y-8">
+            <div>
+                <span class="text-xs font-display font-bold uppercase tracking-widest text-[#8B5CF6]">[ 02. THE WORK SO FAR ]</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold uppercase mt-1">Professional Experience</h2>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6">
+                <!-- Experience entry -->
+                <div class="polaroid flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 gap-2">
+                            <span class="px-3 py-1 bg-[#A7F3D0] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold">Nov 2025 – Present</span>
+                            
+                        </div>
+                        <h3 class="font-display text-xl font-bold uppercase">Digital Account Manager</h3>
+                        
+                        <p class="text-xs text-[#4B5563] leading-relaxed">
+                            Manage international programmatic and mobile acquisition campaigns for global clients. Work across targeting, budgets, optimisation and reporting, while digging into conversion, retention, traffic-quality and attribution data to work out what needs attention. Partner with clients, media partners and technical teams to keep campaigns and measurement on track.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-[#1F2937]/20 flex flex-wrap gap-1">
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Programmatic</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Mobile Acquisition</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Attribution</span>
+                    </div>
+                </div>
+
+                <!-- Experience entry -->
+                <div class="polaroid-alt flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 gap-2">
+                            <span class="px-3 py-1 bg-[#FEF08A] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold">2023 – 2025</span>
+                            
+                        </div>
+                        <h3 class="font-display text-xl font-bold uppercase">Performance Marketing Specialist</h3>
+                        
+                        <p class="text-xs text-[#4B5563] leading-relaxed">
+                            Managed paid campaigns for international eCommerce brands across Google, Meta, Microsoft and TikTok. Worked across roughly 13 accounts, testing audiences, creative, bidding and campaign structures, and turning performance data into budget and growth recommendations. Also worked with analytics and development teams on GA4/GTM tracking and Looker Studio reporting.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-[#1F2937]/20 flex flex-wrap gap-1">
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Google Ads</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Meta Ads</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">eCommerce</span>
+                    </div>
+                </div>
+
+                <!-- Technical background -->
+                <div class="polaroid flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-3 gap-2">
+                            <span class="px-3 py-1 bg-[#FBCFE8] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold">2021 – 2023</span>
+                            
+                        </div>
+                        <h3 class="font-display text-xl font-bold uppercase">Web & Full-Stack Development</h3>
+                        
+                        <p class="text-xs text-[#4B5563] leading-relaxed">
+                            Built and maintained web applications, customised Magento eCommerce sites and worked on third-party integrations. That experience still comes in handy when a tracking issue, landing page or conversion path needs a closer look.
+                        </p>
+                    </div>
+                    <div class="mt-6 pt-3 border-t border-[#1F2937]/20 flex flex-wrap gap-1">
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Web Development</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Magento</span>
+                        <span class="px-2 py-0.5 bg-[#F3EBF9] border border-[#1F2937] rounded text-[10px] font-mono">Integrations</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+                <!-- CASE STUDIES SECTION -->
+        <section id="casestudies" class="space-y-8">
+            <div>
+                <span class="text-xs font-display font-bold uppercase tracking-widest text-[#8B5CF6]">[ 03. SELECTED WORK ]</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold uppercase mt-1">A Few Campaigns Worth Talking About</h2>
+                <p class="text-sm text-[#6B7280] mt-3 max-w-3xl leading-relaxed">
+                    A few client projects I contributed to. The figures below are published team results; my role varied by account and included campaign execution, optimisation, reporting and measurement.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
+                <!-- Luxury eCommerce case study -->
+                <article class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 shadow-[6px_6px_0px_#1F2937] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 gap-2">
+                            <span class="px-3 py-1 bg-[#A7F3D0] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">LUXURY ECOMMERCE · GOOGLE + META</span>
+                            <span class="font-mono text-xs font-bold text-[#6B7280]">LUXURY OUTERWEAR</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold uppercase mb-3">Making the Winter Season Count</h3>
+                        <p class="text-sm text-[#4B5563] leading-relaxed mb-4">
+                            Seasonal campaigns for the Montréal-based luxury outerwear brand, across English- and French-language markets. The team brought Google and Meta activity back for the winter peak, from Black Friday through Christmas and Boxing Day.
+                        </p>
+                        <p class="text-xs text-[#6B7280] mb-5">November–December 2024 vs the same period in 2023.</p>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t-2 border-[#1F2937]/10 text-center font-display">
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-[#8B5CF6]">+93%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Meta Revenue</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-emerald-600">-45%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Meta Costs</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-purple-600">20.84</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Google ROAS</div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-[#6B7280] mt-3">Google also delivered +9% revenue with 58% lower costs; Meta ROAS reached 13.58.</p>
+                        <a href="https://scandiweb.com/blog/ppc-case-study-kanuk-winter-sales/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-4 text-sm font-display font-bold text-[#8B5CF6] hover:underline">Read the case study <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Retail profitability case study -->
+                <article class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 shadow-[6px_6px_0px_#1F2937] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 gap-2">
+                            <span class="px-3 py-1 bg-[#FEF08A] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">PROFITABILITY · GOOGLE + MICROSOFT</span>
+                            <span class="font-mono text-xs font-bold text-[#6B7280]">UK BEDDING RETAILER</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold uppercase mb-3">Looking Beyond ROAS</h3>
+                        <p class="text-sm text-[#4B5563] leading-relaxed mb-4">
+                            We moved the focus from revenue alone to profitability, using margin tracking to identify higher-margin products and make smarter budget decisions across Google and Microsoft Ads.
+                        </p>
+                        <p class="text-xs text-[#6B7280] mb-5">November 2024 vs November 2023.</p>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t-2 border-[#1F2937]/10 text-center font-display">
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-[#8B5CF6]">+50%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Revenue</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-emerald-600">+52%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Conversions</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-purple-600">3.17</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">POAS</div>
+                            </div>
+                        </div>
+                        <p class="text-xs text-[#6B7280] mt-3">Cost per conversion was down 21% year over year.</p>
+                        <a href="https://scandiweb.com/blog/ppc-case-study-increased-conversions-with-margin-tracking/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-4 text-sm font-display font-bold text-[#8B5CF6] hover:underline">Read the case study <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Seasonal retail case study -->
+                <article class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 shadow-[6px_6px_0px_#1F2937] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 gap-2">
+                            <span class="px-3 py-1 bg-[#FBCFE8] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">SEASONAL ECOMMERCE · GOOGLE ADS</span>
+                            <span class="font-mono text-xs font-bold text-[#6B7280]">SEASONAL RETAILER</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold uppercase mb-3">Getting More From Seasonal Demand</h3>
+                        <p class="text-sm text-[#4B5563] leading-relaxed mb-4">
+                            The team reworked bidding for the uniforms category, introduced target ROAS and added Performance Max to support the store during its key seasonal period.
+                        </p>
+                        <p class="text-xs text-[#6B7280] mb-5">Q3 2023 vs Q3 2022.</p>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t-2 border-[#1F2937]/10 text-center font-display">
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-[#8B5CF6]">56</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Seasonal ROAS</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-emerald-600">-49.6%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">CPA</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-purple-600">-49.5%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Avg. CPC</div>
+                            </div>
+                        </div>
+                        <a href="https://scandiweb.com/blog/ppc-case-study-ai-powered-strategy-brings-2x-higher-revenue/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-4 text-sm font-display font-bold text-[#8B5CF6] hover:underline">Read the case study <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Cross-border eCommerce case study -->
+                <article class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 shadow-[6px_6px_0px_#1F2937] flex flex-col justify-between">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 gap-2">
+                            <span class="px-3 py-1 bg-[#A7F3D0] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">PEAK-SEASON ACQUISITION</span>
+                            <span class="font-mono text-xs font-bold text-[#6B7280]">CROSS-BORDER RETAIL</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold uppercase mb-3">A Fast Start Before Peak Season</h3>
+                        <p class="text-sm text-[#4B5563] leading-relaxed mb-4">
+                            A fast-turnaround PPC project for a cross-border shopping and logistics business. The team had to get campaigns ready just weeks before peak season and quickly focus on the audiences and searches most likely to convert.
+                        </p>
+                        <p class="text-xs text-[#6B7280] mb-5">Published results following the campaign takeover.</p>
+                    </div>
+                    <div>
+                        <div class="grid grid-cols-3 gap-3 pt-4 border-t-2 border-[#1F2937]/10 text-center font-display">
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-[#8B5CF6]">+224.5%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">Revenue</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-emerald-600">+72.16%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">ROAS</div>
+                            </div>
+                            <div class="p-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl">
+                                <div class="text-base font-extrabold text-purple-600">+13.01%</div>
+                                <div class="text-[10px] text-[#6B7280] uppercase">New Sign-ups</div>
+                            </div>
+                        </div>
+                        <a href="https://scandiweb.com/blog/ppc-case-study-strategic-approach-leads-to-revenue-increase-during-peak-season/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-4 text-sm font-display font-bold text-[#8B5CF6] hover:underline">Read the case study <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </article>
+
+                <!-- Amazon marketplace launch case study -->
+                <article class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 shadow-[6px_6px_0px_#1F2937] flex flex-col justify-between lg:col-span-2 lg:max-w-2xl lg:w-full lg:mx-auto">
+                    <div>
+                        <div class="flex items-center justify-between mb-4 gap-2">
+                            <span class="px-3 py-1 bg-[#FEF08A] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">AMAZON ADS · MARKETPLACE LAUNCH</span>
+                            <span class="font-mono text-xs font-bold text-[#6B7280]">CATALOG SETUP</span>
+                        </div>
+                        <h3 class="font-display text-2xl font-bold uppercase mb-3">Getting a Full Product Catalogue Amazon-Ready</h3>
+                        <p class="text-sm text-[#4B5563] leading-relaxed mb-5">
+                            A tech-education brand was preparing to launch its full product range on Amazon. The project covered keyword research, benefit-led listing copy, A+ content and visuals, plus the technical work behind bulk uploads, category mapping and quality checks across product variants and bundles.
+                        </p>
+                    </div>
+                    <div>
+                        <div class="pt-4 border-t-2 border-[#1F2937]/10">
+                            <p class="text-xs font-display font-bold uppercase tracking-wide mb-3">Project scope</p>
+                            <div class="flex flex-wrap gap-2">
+                                <span class="px-3 py-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl text-xs font-display font-bold">Keyword research</span>
+                                <span class="px-3 py-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl text-xs font-display font-bold">Listing copy</span>
+                                <span class="px-3 py-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl text-xs font-display font-bold">A+ content</span>
+                                <span class="px-3 py-2 bg-[#F3EBF9] border border-[#1F2937] rounded-xl text-xs font-display font-bold">Bulk upload & QA</span>
+                            </div>
+                        </div>
+                        <a href="https://scandiweb.com/blog/ppc-case-study-amazon-launch-setup-for-circuitmesss/" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-1 mt-4 text-sm font-display font-bold text-[#8B5CF6] hover:underline">Read the Amazon launch case study <i class="ph ph-arrow-up-right"></i></a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+                <!-- SKILLS & TOOLS SECTION -->
+        <section id="skills" class="space-y-8">
+            <div>
+                <span class="text-xs font-display font-bold uppercase tracking-widest text-[#8B5CF6]">[ 04. MY TOOLKIT ]</span>
+                <h2 class="font-display text-3xl sm:text-4xl font-extrabold uppercase mt-1">Platforms, Tools & Things I Do</h2>
+            </div>
+
+            <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-google-logo text-3xl text-red-500 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Google Ads</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">Search · Shopping · PMax · Merchant Center</p>
+                </div>
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-meta-logo text-3xl text-blue-600 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Meta Ads</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">Paid social · Retargeting</p>
+                </div>
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-megaphone text-3xl text-purple-600 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Other Channels</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">Microsoft · TikTok · DV360</p>
+                </div>
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-chart-line-up text-3xl text-amber-500 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Analytics</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">GA4 · GTM · Looker Studio</p>
+                </div>
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-device-mobile text-3xl text-emerald-600 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Mobile & Attribution</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">Adjust · AppsFlyer · Singular · Kochava · HubSpot</p>
+                </div>
+                <div class="p-5 bg-white border-2 border-[#1F2937] rounded-2xl text-center shadow-[4px_4px_0px_#1F2937] hover:translate-y-[-2px] transition-transform">
+                    <i class="ph ph-envelope-simple text-3xl text-pink-600 mb-2"></i>
+                    <h3 class="font-display font-bold text-sm uppercase">Beyond Ads</h3>
+                    <p class="text-[10px] text-[#6B7280] mt-1">Klaviyo · Email Flows · HubSpot · Claude</p>
+                </div>
+            </div>
+
+            <div class="bg-white/70 border-2 border-[#1F2937] rounded-2xl p-5">
+                <p class="text-xs font-display font-bold uppercase tracking-wide mb-2">The day-to-day</p>
+                <p class="text-sm text-[#4B5563] leading-relaxed">
+                    Campaign strategy · Budget pacing · Audience and creative testing · Google Merchant Center and product-feed optimisation · Email flows (Klaviyo) · HubSpot audience management and tracking · Mobile measurement (Adjust, AppsFlyer, Singular, Kochava) · Conversion tracking · Attribution · ROAS / CPA / POAS analysis · Client communication · Reporting and recommendations
+                </p>
+            </div>
+        </section>
+
+                <!-- CONTACT SECTION -->
+        <section id="contact" class="bg-white border-2 border-[#1F2937] rounded-3xl p-8 sm:p-12 shadow-[6px_6px_0px_#1F2937]">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-8 items-center">
+                <div class="lg:col-span-7 space-y-4">
+                    <span class="px-3 py-1 bg-[#FEF08A] border-2 border-[#1F2937] rounded-full text-xs font-display font-bold shadow-[2px_2px_0px_#1F2937]">LET'S CONNECT</span>
+                    <h2 class="font-display text-3xl sm:text-4xl font-extrabold uppercase">Have a role in mind? Let's talk.</h2>
+                    <p class="text-sm text-[#4B5563] leading-relaxed max-w-xl">
+                        I'm based in Tbilisi, Georgia and open to remote opportunities and relocation. If you think my experience could be a fit for your team, I'd be happy to hear from you.
+                    </p>
+                    <div class="space-y-2 pt-2 font-mono text-xs text-[#4B5563]">
+                        <div class="flex items-center gap-2">
+                            <i class="ph ph-envelope text-base text-[#8B5CF6]"></i>
+                            <a href="mailto:elenea404@gmail.com" class="hover:text-[#8B5CF6]">elenea404@gmail.com</a>
+                        </div>
+                        <div class="flex items-center gap-2">
+                            <i class="ph ph-map-pin text-base text-[#8B5CF6]"></i>
+                            <span>Tbilisi, Georgia · Remote / Relocation</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="lg:col-span-5 flex flex-col gap-4">
+                    <a href="mailto:elenea404@gmail.com?subject=Let's%20talk%20about%20an%20opportunity" class="w-full py-4 px-5 bg-[#8B5CF6] text-white font-display font-bold text-sm uppercase chunky-btn rounded-xl flex items-center justify-center gap-2">
+                        Email Me <i class="ph ph-arrow-up-right text-lg"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/elenea404/" target="_blank" rel="noopener noreferrer" class="w-full py-4 px-5 bg-[#FEF08A] text-[#1F2937] font-display font-bold text-sm uppercase chunky-btn rounded-xl flex items-center justify-center gap-2">
+                        Find Me on LinkedIn <i class="ph ph-linkedin-logo text-lg"></i>
+                    </a>
+                    <p class="text-xs text-[#6B7280] text-center">No contact form pretending to send a message. Just email me directly.</p>
+                </div>
+            </div>
+        </section>
+
+            </main>
+
+    <!-- Footer -->
+    <footer class="mt-20 border-t-2 border-[#1F2937] bg-white py-8 px-6 text-center font-display text-xs font-bold uppercase">
+        <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+            <div>&copy; 2026 Elene Torchinava. All Rights Reserved.</div>
+            <div class="flex items-center gap-6">
+                <a href="https://www.linkedin.com/in/elenea404/" target="_blank" rel="noopener noreferrer" class="hover:text-[#8B5CF6]">LinkedIn</a>
+                <a href="mailto:elenea404@gmail.com" target="_blank" rel="noopener noreferrer" class="hover:text-[#8B5CF6]">Email</a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
